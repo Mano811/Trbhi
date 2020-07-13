@@ -1,0 +1,36 @@
+- name: Create Azure VM
+  hosts: localhost
+  connection: local
+  roles:
+     - role: azure_vm_create
+       vars:
+           vm_offer: "UbuntuServer"
+           vm_pub: "Canonical"
+           vm_sku: "16.04-LTS"
+           vm_size: "Standard_DS1_v2"
+           az: "eastus"
+           vm_net: "myVNet"
+           vm_subnet: "mySubnet"
+           vm_publicIP: "myPublicIP"
+           vm_NSG: "myNSG"
+           vm_NIC: "myNIC"
+           vm_Name: "manoVM"
+           resource_group: "ansible-rg"
+           os_user: "mano"
+           sshkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfPUvo4aFPJDzxCYqVqrsXkktgbKPkZ6BJxwd5IKkTcNLbcFi2g/IeqDrttOqlxHEHuOpyqoHLA3N/3EO9t1AgeDviX/Me+Ur09mAxuHHeANyOXvkULp+0qLZ1ZPFVvJmo8qXl3EsqlsS0OCxvFymRUSGPb0/vniybO3cRWU5rp6xp3O7pjaAqFQ9ZQ39/Hd6OptQJGF1Bk/6HDmot8bu0gy2feutLNCLub537nn5gCWGvHMc41IXFO9aALYZ1SGyFzabWvR4ZX+Ab+0i+f8I8gsseoc2HDp4lBSXiz2LuLFeVODyNcS3egvjzGiDX0YzBaZDrd8f/F4zX8HLIpZWH manobalaji@manobalaji-lnx"
+     - role: azure_vm_create
+       vars:
+           vm_offer: "UbuntuServer"
+           vm_pub: "Canonical"
+           vm_sku: "16.04-LTS"
+           vm_size: "Standard_DS1_v2"
+           az: "eastus"
+           vm_net: "myVNet"
+           vm_subnet: "mySubnet"
+           vm_publicIP: "myPublicIPtwo"
+           vm_NSG: "myNSG"
+           vm_NIC: "myNICtwo"
+           vm_Name: "manoVMtwo"
+           resource_group: "ansible-rg"
+           os_user: "mano"
+           sshkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfPUvo4aFPJDzxCYqVqrsXkktgbKPkZ6BJxwd5IKkTcNLbcFi2g/IeqDrttOqlxHEHuOpyqoHLA3N/3EO9t1AgeDviX/Me+Ur09mAxuHHeANyOXvkULp+0qLZ1ZPFVvJmo8qXl3EsqlsS0OCxvFymRUSGPb0/vniybO3cRWU5rp6xp3O7pjaAqFQ9ZQ39/Hd6OptQJGF1Bk/6HDmot8bu0gy2feutLNCLub537nn5gCWGvHMc41IXFO9aALYZ1SGyFzabWvR4ZX+Ab+0i+f8I8gsseoc2HDp4lBSXiz2LuLFeVODyNcS3egvjzGiDX0YzBaZDrd8f/F4zX8HLIpZWH manobalaji@manobalaji-lnx"
