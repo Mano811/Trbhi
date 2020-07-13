@@ -1,0 +1,11 @@
+Exercise 3: Linux problem solving:
+
+1. Checked the status of the redis service and seen the error using journalctl -xe and also checked the permission of the redis logfile. 
+2. Found that Log file path is wrong in the redis configuration file.
+3. Provided the correct path of logfile in the redis config file and fixed the issue.
+
+Exercise 4: Windows problem solving:
+
+1. Checked IIS event error on the server manager.
+2. Found the Application pool has been disabled with an identity error.
+3. Changed the DefaultAppPool identity as built in ApplicationPoolIdentity and fixed the issue.
