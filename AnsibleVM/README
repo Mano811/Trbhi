@@ -1,0 +1,4 @@
+Download the AnsibleVM directory.
+Change directory to AnsibleVM.
+Run the command below,
+#ansible-playbook azurevmcreate.yml
